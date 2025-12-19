@@ -36,7 +36,6 @@ jobs:
           echo "🏆 Extracting hall of fame data..."
           node scripts/extract-data.js
           echo "✓ Data extraction complete"
-        continue-on-error: false
 
       - name: Verify data file exists
         run: |

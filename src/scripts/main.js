@@ -44,9 +44,18 @@ async function init() {
  */
 async function loadData() {
     try {
-        const response = await fetch('data/halloffame.json');
+        // Set a reasonable timeout for the fetch
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+        
+        const response = await fetch('data/halloffame.json', {
+            signal: controller.signal
+        });
+        
+        clearTimeout(timeoutId);
+        
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
         
         hallOfFameData = await response.json();
@@ -56,7 +65,19 @@ async function loadData() {
         console.log(`✓ Loaded ${allPlayers.length} players`);
     } catch (error) {
         console.error('Error loading data:', error);
-        showError('Fout bij laden van data. Probeer de pagina te verversen.');
+        
+        let errorMessage = 'Fout bij laden van data. ';
+        if (error.name === 'AbortError') {
+            errorMessage += 'De verbinding duurde te lang. Controleer je internetverbinding.';
+        } else if (error.message.includes('HTTP')) {
+            errorMessage += `Server fout: ${error.message}`;
+        } else if (error.message.includes('Failed to fetch')) {
+            errorMessage += 'Kan geen verbinding maken. Controleer je internetverbinding.';
+        } else {
+            errorMessage += 'Probeer de pagina te verversen.';
+        }
+        
+        showError(errorMessage);
     }
 }
 

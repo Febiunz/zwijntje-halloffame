@@ -215,6 +215,14 @@ function processData(cells, source) {
 }
 
 /**
+ * Count diacritical marks in a name (accents, etc.)
+ * Used to prefer the most complete version of a name
+ */
+function countDiacritics(str) {
+  return (str.match(/[éèêëáàâäíìîïóòôöúùûüçñ]/gi) || []).length;
+}
+
+/**
  * Build aggregated statistics per player
  */
 function buildPlayerStats(allResults) {
@@ -227,10 +235,16 @@ function buildPlayerStats(allResults) {
       
       if (!playerMap.has(normalizedName)) {
         playerMap.set(normalizedName, {
-          displayName: name, // Keep first occurrence as display name
+          displayName: name,
           wins: {},
           totalWins: 0
         });
+      } else {
+        // Update display name to prefer version with more diacritics (accents)
+        const player = playerMap.get(normalizedName);
+        if (countDiacritics(name) > countDiacritics(player.displayName)) {
+          player.displayName = name;
+        }
       }
       
       const player = playerMap.get(normalizedName);

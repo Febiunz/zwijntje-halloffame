@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eregalerij van JBV 't Zwijntje - Alle kampioenen en winnaars van clubkampioenschappen en competities">
+    <meta name="theme-color" content="#2c5f2d">
+    <title>Eregalerij - JBV 't Zwijntje</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏆</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">
+                    <span class="trophy-icon">🏆</span>
+                    Eregalerij JBV 't Zwijntje
+                </h1>
+                <p class="site-subtitle">Alle kampioenen sinds 1997</p>
+            </div>
+            
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="themeToggle" aria-label="Wissel thema">
+                <span class="theme-icon theme-icon-light">☀️</span>
+                <span class="theme-icon theme-icon-dark">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Info Section -->
+            <section class="info-section">
+                <div class="info-card">
+                    <h2>Over deze Eregalerij</h2>
+                    <p>
+                        Hier vind je een overzicht van alle winnaars van de clubkampioenschappen 
+                        en clubcompetities van JBV 't Zwijntje. De telling laat zien hoe vaak 
+                        iemand het A-poule of de hoofdprijs heeft gewonnen.
+                    </p>
+                    <p class="info-note">
+                        <strong>Let op:</strong> Alleen overwinningen in Poule A tellen mee 
+                        voor de totaalstand.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Stats Summary -->
+            <section class="stats-summary" id="statsSummary">
+                <div class="stat-card">
+                    <div class="stat-value" id="totalPlayers">-</div>
+                    <div class="stat-label">Spelers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="totalWins">-</div>
+                    <div class="stat-label">Totale Overwinningen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="topPlayer">-</div>
+                    <div class="stat-label">Meeste Overwinningen</div>
+                </div>
+            </section>
+
+            <!-- Filters -->
+            <section class="filters-section">
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="searchInput" class="filter-label">
+                            <span class="icon">🔍</span> Zoeken
+                        </label>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Zoek op naam..."
+                            aria-label="Zoek speler op naam"
+                        >
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="minWins" class="filter-label">
+                            <span class="icon">🎯</span> Min. overwinningen
+                        </label>
+                        <input 
+                            type="number" 
+                            id="minWins" 
+                            class="number-input" 
+                            min="1" 
+                            value="1"
+                            aria-label="Minimaal aantal overwinningen"
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hall of Fame Table -->
+            <section class="table-section">
+                <div class="table-container">
+                    <table class="hall-of-fame-table" id="hallOfFameTable">
+                        <thead>
+                            <tr>
+                                <th class="sortable" data-sort="rank">
+                                    <button class="sort-button" aria-label="Sorteer op rang">
+                                        # <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable" data-sort="name">
+                                    <button class="sort-button" aria-label="Sorteer op naam">
+                                        Naam <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable" data-sort="total" aria-sort="descending">
+                                    <button class="sort-button" aria-label="Sorteer op totaal">
+                                        Totaal <span class="sort-icon active">▼</span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="champ-doubletten" title="Clubkampioenschappen Doubletten">
+                                    <button class="sort-button" aria-label="Sorteer op doubletten kampioenschappen">
+                                        🏅 Dou. K <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="champ-mix" title="Clubkampioenschappen Mix">
+                                    <button class="sort-button" aria-label="Sorteer op mix kampioenschappen">
+                                        🏅 Mix <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="champ-tete-heren" title="Clubkampioenschappen Tête-à-tête Heren">
+                                    <button class="sort-button" aria-label="Sorteer op tête-à-tête heren">
+                                        🏅 TaT H <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="champ-tete-dames" title="Clubkampioenschappen Tête-à-tête Dames">
+                                    <button class="sort-button" aria-label="Sorteer op tête-à-tête dames">
+                                        🏅 TaT D <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="champ-tripletten" title="Clubkampioenschappen Tripletten">
+                                    <button class="sort-button" aria-label="Sorteer op tripletten kampioenschappen">
+                                        🏅 Tri. K <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="comp-doubletten" title="Clubcompetities Doubletten">
+                                    <button class="sort-button" aria-label="Sorteer op doubletten competities">
+                                        🥇 Dou. C <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="comp-tripletten" title="Clubcompetities Tripletten">
+                                    <button class="sort-button" aria-label="Sorteer op tripletten competities">
+                                        🥇 Tri. C <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                                <th class="sortable tooltip" data-sort="comp-zomer" title="Zomercyclus">
+                                    <button class="sort-button" aria-label="Sorteer op zomercyclus">
+                                        ☀️ Zomer <span class="sort-icon"></span>
+                                    </button>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Table rows will be inserted here by JavaScript -->
+                            <tr class="loading-row">
+                                <td colspan="11">
+                                    <div class="loading-spinner"></div>
+                                    <p>Data laden...</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="table-footer" id="tableFooter">
+                    <p class="results-count" id="resultsCount">-</p>
+                    <p class="last-updated" id="lastUpdated">-</p>
+                </div>
+            </section>
+
+            <!-- Legend -->
+            <section class="legend-section">
+                <h3>Legenda</h3>
+                <div class="legend-grid">
+                    <div class="legend-item">
+                        <span class="legend-icon">🏅</span>
+                        <span class="legend-text">Clubkampioenschappen</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">🥇</span>
+                        <span class="legend-text">Clubcompetities</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">Dou. K</span>
+                        <span class="legend-text">Doubletten Kampioenschap</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">TaT</span>
+                        <span class="legend-text">Tête-à-tête (H=Heren, D=Dames)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">Tri. K</span>
+                        <span class="legend-text">Tripletten Kampioenschap</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-icon">Dou./Tri. C</span>
+                        <span class="legend-text">Doubletten/Tripletten Competitie</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; 2025 JBV 't Zwijntje | 
+                <a href="https://www.zwijntje.nl" target="_blank" rel="noopener">Officiële website</a>
+            </p>
+            <p class="footer-note">
+                Data automatisch bijgewerkt van de officiële website
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

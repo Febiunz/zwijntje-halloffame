@@ -91,15 +91,50 @@ function extractNames(text) {
 }
 
 /**
- * Fetch HTML content from a URL
+ * Fetch HTML content from a URL with retry logic
  */
-function fetchUrl(url) {
+function fetchUrl(url, retries = 3, delayMs = 500) {
   return new Promise((resolve, reject) => {
-    https.get(url, (res) => {
-      let data = '';
-      res.on('data', (chunk) => data += chunk);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
+    function attempt(remainingRetries, currentDelay) {
+      const req = https.get(url, (res) => {
+        let data = '';
+        
+        res.on('data', (chunk) => {
+          data += chunk;
+        });
+        
+        res.on('end', () => {
+          const statusCode = res.statusCode || 0;
+          
+          // Retry on common transient status codes
+          const shouldRetryStatus = statusCode === 429 || (statusCode >= 500 && statusCode < 600);
+          
+          if (statusCode === 200) {
+            resolve(data);
+          } else if (shouldRetryStatus && remainingRetries > 0) {
+            console.log(`   ⚠ Status ${statusCode}, retrying... (${remainingRetries} attempts left)`);
+            setTimeout(() => {
+              attempt(remainingRetries - 1, currentDelay * 2);
+            }, currentDelay);
+          } else {
+            reject(new Error(`Request to ${url} failed with status code ${statusCode}`));
+          }
+        });
+      });
+      
+      req.on('error', (err) => {
+        if (remainingRetries > 0) {
+          console.log(`   ⚠ Network error, retrying... (${remainingRetries} attempts left)`);
+          setTimeout(() => {
+            attempt(remainingRetries - 1, currentDelay * 2);
+          }, currentDelay);
+        } else {
+          reject(err);
+        }
+      });
+    }
+    
+    attempt(retries, delayMs);
   });
 }
 
@@ -110,19 +145,17 @@ function fetchUrl(url) {
  * Frontend uses textContent (not innerHTML) to safely display the data.
  */
 function parseTableData(html) {
-  const results = [];
   const tdRegex = /<td[^>]*>(.*?)<\/td>/gs;
   const cells = [];
   
   let match;
   while ((match = tdRegex.exec(html)) !== null) {
-    // Remove HTML tags more thoroughly and decode entities
+    // Remove HTML tags and decode entities
     // This is safe because: (1) runs in Node.js, not browser
     // (2) output stored as JSON, not rendered as HTML
     let content = match[1]
-      // Remove all HTML tags iteratively to handle nested tags
+      // Remove all HTML tags
       .replace(/<[^>]*>/g, '')
-      .replace(/<[^>]*>/g, '') // Second pass to catch any remaining tags
       // Decode HTML entities
       .replace(/&[^;]+;/g, (entity) => {
         const entities = {
@@ -204,7 +237,6 @@ function processData(cells, source) {
     } else {
       // Regular format: Year, Poule A, Poule B (or C)
       const pouleA = cells[i + 1];
-      const pouleB = cells[i + 2];
       
       if (pouleA && pouleA !== '–') {
         const names = extractNames(pouleA);

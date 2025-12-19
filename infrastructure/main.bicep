@@ -45,13 +45,6 @@ resource staticWebApp 'Microsoft.Web/staticSites@2023-01-01' = {
   }
 }
 
-@description('Custom domain configuration (optional)')
-resource customDomain 'Microsoft.Web/staticSites/customDomains@2023-01-01' = if (false) {
-  parent: staticWebApp
-  name: 'www.example.com'
-  properties: {}
-}
-
 output staticWebAppId string = staticWebApp.id
 output staticWebAppName string = staticWebApp.name
 output defaultHostname string = staticWebApp.properties.defaultHostname

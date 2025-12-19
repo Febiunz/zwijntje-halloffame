@@ -43,16 +43,14 @@ async function init() {
  * Load hall of fame data from JSON
  */
 async function loadData() {
+    // Set a reasonable timeout for the fetch
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
+    
     try {
-        // Set a reasonable timeout for the fetch
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
-        
         const response = await fetch('data/halloffame.json', {
             signal: controller.signal
         });
-        
-        clearTimeout(timeoutId);
         
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -78,6 +76,8 @@ async function loadData() {
         }
         
         showError(errorMessage);
+    } finally {
+        clearTimeout(timeoutId);
     }
 }
 
@@ -183,8 +183,9 @@ function sortPlayers() {
             valueA = a.totalWins;
             valueB = b.totalWins;
         } else if (currentSort.column === 'rank') {
-            // Rank is based on position after sorting by total
-            return 0; // Will be handled by index
+            // Rank sorting: sort by total wins (descending by default)
+            valueA = a.totalWins;
+            valueB = b.totalWins;
         } else {
             // Category-specific sorting
             const categoryKey = Object.keys(CATEGORY_MAP).find(
@@ -238,16 +239,16 @@ function renderTable() {
     if (!tbody) return;
     
     // Clear existing rows
-    tbody.innerHTML = '';
+    tbody.textContent = '';
     
     if (filteredPlayers.length === 0) {
-        tbody.innerHTML = `
-            <tr>
-                <td colspan="11" class="text-center">
-                    Geen resultaten gevonden. Pas de filters aan.
-                </td>
-            </tr>
-        `;
+        const row = document.createElement('tr');
+        const cell = document.createElement('td');
+        cell.colSpan = 11;
+        cell.className = 'text-center';
+        cell.textContent = 'Geen resultaten gevonden. Pas de filters aan.';
+        row.appendChild(cell);
+        tbody.appendChild(row);
         updateResultsCount(0);
         return;
     }
@@ -372,13 +373,23 @@ function formatDate(date) {
 function showError(message) {
     const tbody = document.getElementById('tableBody');
     if (tbody) {
-        tbody.innerHTML = `
-            <tr>
-                <td colspan="11" class="text-center" style="color: var(--color-warning); padding: var(--spacing-xl);">
-                    ⚠️ ${message}
-                </td>
-            </tr>
-        `;
+        // Clear existing content
+        tbody.textContent = '';
+        
+        // Create error row and cell
+        const row = document.createElement('tr');
+        const cell = document.createElement('td');
+        
+        cell.colSpan = 11;
+        cell.className = 'text-center';
+        cell.style.color = 'var(--color-warning)';
+        cell.style.padding = 'var(--spacing-xl)';
+        
+        // Set text content safely to avoid XSS
+        cell.textContent = '⚠️ ' + message;
+        
+        row.appendChild(cell);
+        tbody.appendChild(row);
     }
 }
 

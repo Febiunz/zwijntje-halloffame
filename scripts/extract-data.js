@@ -65,7 +65,8 @@ const NAME_MAPPINGS = {
   'roy derksen': 'Roy Derks',
   'jan van de bosch': 'Jan van den Bosch',
   'chantal kamphuis': 'Chantal Brinks-Kamphuis',
-  'bert jan rietveld': 'Bert-Jan Rietveld'
+  'bert jan rietveld': 'Bert-Jan Rietveld',
+  'raja anton': 'Jesurajah Anton'
 };
 
 /**

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-19T21:32:50.229Z",
+  "lastUpdated": "2025-12-19T21:48:49.089Z",
   "sources": [
     {
       "name": "Doubletten Kampioenschappen",
@@ -238,6 +238,15 @@
       "totalWins": 5
     },
     {
+      "displayName": "Jesurajah Anton",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_tete-a-tete": 2,
+        "competition_tripletten": 1
+      },
+      "totalWins": 5
+    },
+    {
       "displayName": "Vikas Arumugam",
       "wins": {
         "championship_doubletten": 2,
@@ -276,14 +285,6 @@
         "championship_doubletten": 2,
         "competition_tripletten": 1,
         "competition_zomercyclus": 1
-      },
-      "totalWins": 4
-    },
-    {
-      "displayName": "Jesurajah Anton",
-      "wins": {
-        "championship_doubletten": 2,
-        "championship_tete-a-tete": 2
       },
       "totalWins": 4
     },
@@ -671,13 +672,6 @@
     },
     {
       "displayName": "Henk Stegeman",
-      "wins": {
-        "competition_tripletten": 1
-      },
-      "totalWins": 1
-    },
-    {
-      "displayName": "Raja Anton",
       "wins": {
         "competition_tripletten": 1
       },

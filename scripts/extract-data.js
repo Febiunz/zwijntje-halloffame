@@ -56,6 +56,19 @@ const DATA_SOURCES = [
 ];
 
 /**
+ * Name mapping for handling same people with different names
+ * Maps variations to the canonical name to use
+ */
+const NAME_MAPPINGS = {
+  'anette van velzen': 'Anette Boluijt',
+  'vikas arumugan': 'Vikas Arumugam',
+  'roy derksen': 'Roy Derks',
+  'jan van de bosch': 'Jan van den Bosch',
+  'chantal kamphuis': 'Chantal Brinks-Kamphuis',
+  'bert jan rietveld': 'Bert-Jan Rietveld'
+};
+
+/**
  * Normalize a person's name for matching
  * Handles accents, case, and common variations
  */
@@ -71,6 +84,21 @@ function normalizeName(name) {
     .replace(/ç/g, 'c')
     .replace(/ñ/g, 'n')
     .replace(/\s+/g, ' ');
+}
+
+/**
+ * Apply name mappings to ensure consistent names
+ * Returns the canonical name to use
+ */
+function applyNameMapping(name) {
+  const normalized = normalizeName(name);
+  
+  // Check if there's a mapping for this name
+  if (NAME_MAPPINGS[normalized]) {
+    return NAME_MAPPINGS[normalized];
+  }
+  
+  return name;
 }
 
 /**
@@ -179,46 +207,52 @@ function parseTableData(html) {
 
 /**
  * Process championship/competition data
+ * Handles variable row sizes in HTML tables (some have 3 columns, some have 4)
  */
 function processData(cells, source) {
   const results = [];
   
-  // Skip header row (first 3 or 2 cells)
-  let headerSize = 3;
+  // Determine expected columns based on source
   if (source.category === 'zomercyclus') {
-    headerSize = 2;
-  } else if (source.category === 'tete-a-tete') {
-    headerSize = 3; // Jaar, Heren, Dames
-  }
-  
-  // Process data in rows
-  for (let i = headerSize; i < cells.length; i += headerSize) {
-    const year = cells[i];
-    
-    // Skip if not a valid year
-    if (!year || !/^\d{4}$/.test(year)) continue;
-    
-    if (source.category === 'zomercyclus') {
-      // Zomercyclus has only year and name
+    // Zomercyclus: Jaar, Naam
+    // Skip header (first 2 cells)
+    for (let i = 2; i + 1 < cells.length; i += 2) {
+      const year = cells[i];
+      if (!year || !/^\d{4}$/.test(year)) continue;
+      
+      const parsedYear = parseInt(year);
+      // Validate year is in reasonable range
+      if (parsedYear < 1990 || parsedYear > 2100) continue;
+      
       const winner = cells[i + 1];
       if (winner && winner !== '–') {
         results.push({
-          year: parseInt(year),
+          year: parsedYear,
           category: source.category,
           type: source.type,
           poule: 'A',
           winners: [winner]
         });
       }
-    } else if (source.category === 'tete-a-tete') {
-      // Tête-à-tête has separate columns for men and women
+    }
+  } else if (source.category === 'tete-a-tete') {
+    // Tête-à-tête: Jaar, Heren, Dames
+    // Skip header (first 3 cells)
+    for (let i = 3; i + 2 < cells.length; i += 3) {
+      const year = cells[i];
+      if (!year || !/^\d{4}$/.test(year)) continue;
+      
+      const parsedYear = parseInt(year);
+      // Validate year is in reasonable range
+      if (parsedYear < 1990 || parsedYear > 2100) continue;
+      
       const menWinner = cells[i + 1];
       const womenWinner = cells[i + 2];
       
       if (menWinner && menWinner !== '–') {
         results.push({
-          year: parseInt(year),
-          category: source.category + '-heren',
+          year: parsedYear,
+          category: source.category,
           type: source.type,
           poule: 'A',
           winners: [menWinner]
@@ -227,22 +261,55 @@ function processData(cells, source) {
       
       if (womenWinner && womenWinner !== '–') {
         results.push({
-          year: parseInt(year),
-          category: source.category + '-dames',
+          year: parsedYear,
+          category: source.category,
           type: source.type,
           poule: 'A',
           winners: [womenWinner]
         });
       }
-    } else {
-      // Regular format: Year, Poule A, Poule B (or C)
-      const pouleA = cells[i + 1];
+    }
+  } else {
+    // Other categories: Process row by row, detecting year cells
+    // Table structure varies: some rows have 3 cells (Year, A, B), some have 4 (Year, A, B, C)
+    let i = 0;
+    
+    // Skip until we find first year (after header)
+    while (i < cells.length && !/^\d{4}$/.test(cells[i])) {
+      i++;
+    }
+    
+    // Process remaining cells
+    while (i < cells.length) {
+      const year = cells[i];
       
-      if (pouleA && pouleA !== '–') {
+      // Check if this is a valid year
+      if (!/^\d{4}$/.test(year)) {
+        i++;
+        continue;
+      }
+      
+      const parsedYear = parseInt(year);
+      // Validate year is in reasonable range
+      if (parsedYear < 1990 || parsedYear > 2100) {
+        i++;
+        continue;
+      }
+      
+      i++; // Move to Poule A
+      
+      // If there is no cell after the year, there is no Poule A data to process
+      if (i >= cells.length) {
+        break;
+      }
+      
+      // Get Poule A data
+      const pouleA = cells[i];
+      if (pouleA && pouleA.trim() !== '' && pouleA !== '–') {
         const names = extractNames(pouleA);
         if (names.length > 0) {
           results.push({
-            year: parseInt(year),
+            year: parsedYear,
             category: source.category,
             type: source.type,
             poule: 'A',
@@ -250,8 +317,12 @@ function processData(cells, source) {
           });
         }
       }
+      i++; // Move past Poule A
       
-      // We don't count Poule B as wins per requirements
+      // Skip Poule B and optionally Poule C until we find the next year or end
+      while (i < cells.length && !/^\d{4}$/.test(cells[i])) {
+        i++;
+      }
     }
   }
   
@@ -275,19 +346,21 @@ function buildPlayerStats(allResults) {
   // Count wins per category per player
   allResults.forEach(result => {
     result.winners.forEach(name => {
-      const normalizedName = normalizeName(name);
+      // Apply name mapping first to get canonical name
+      const canonicalName = applyNameMapping(name);
+      const normalizedName = normalizeName(canonicalName);
       
       if (!playerMap.has(normalizedName)) {
         playerMap.set(normalizedName, {
-          displayName: name,
+          displayName: canonicalName,
           wins: {},
           totalWins: 0
         });
       } else {
         // Update display name to prefer version with more diacritics (accents)
         const player = playerMap.get(normalizedName);
-        if (countDiacritics(name) > countDiacritics(player.displayName)) {
-          player.displayName = name;
+        if (countDiacritics(canonicalName) > countDiacritics(player.displayName)) {
+          player.displayName = canonicalName;
         }
       }
       

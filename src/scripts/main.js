@@ -13,8 +13,7 @@ let hallOfFameData = null;
 const CATEGORY_MAP = {
     'championship_doubletten': 'champ-doubletten',
     'championship_mix': 'champ-mix',
-    'championship_tete-a-tete-heren': 'champ-tete-heren',
-    'championship_tete-a-tete-dames': 'champ-tete-dames',
+    'championship_tete-a-tete': 'champ-tete',
     'championship_tripletten': 'champ-tripletten',
     'competition_doubletten': 'comp-doubletten',
     'competition_tripletten': 'comp-tripletten',
@@ -244,7 +243,7 @@ function renderTable() {
     if (filteredPlayers.length === 0) {
         const row = document.createElement('tr');
         const cell = document.createElement('td');
-        cell.colSpan = 11;
+        cell.colSpan = 10;
         cell.className = 'text-center';
         cell.textContent = 'Geen resultaten gevonden. Pas de filters aan.';
         row.appendChild(cell);
@@ -380,7 +379,7 @@ function showError(message) {
         const row = document.createElement('tr');
         const cell = document.createElement('td');
         
-        cell.colSpan = 11;
+        cell.colSpan = 10;
         cell.className = 'text-center';
         cell.style.color = 'var(--color-warning)';
         cell.style.padding = 'var(--spacing-xl)';

@@ -1,0 +1,27 @@
+{
+  "name": "zwijntje-halloffame",
+  "version": "1.0.0",
+  "description": "Hall of Fame website for JBV 't Zwijntje - Jeu de boules club championship results",
+  "scripts": {
+    "extract-data": "node scripts/extract-data.js",
+    "serve": "npx serve src -p 3000",
+    "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Febiunz/zwijntje-halloffame.git"
+  },
+  "keywords": [
+    "jeu-de-boules",
+    "petanque",
+    "hall-of-fame",
+    "championship",
+    "zwijntje"
+  ],
+  "author": "JBV 't Zwijntje",
+  "license": "MIT",
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

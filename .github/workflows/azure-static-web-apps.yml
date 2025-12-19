@@ -1,0 +1,79 @@
+name: Deploy to Azure Static Web Apps
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  build_and_deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          lfs: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Extract data from source
+        run: |
+          echo "🏆 Extracting hall of fame data..."
+          node scripts/extract-data.js
+          echo "✓ Data extraction complete"
+
+      - name: Verify data file exists
+        run: |
+          if [ -f "src/data/halloffame.json" ]; then
+            echo "✓ Data file created successfully"
+            echo "File size: $(du -h src/data/halloffame.json | cut -f1)"
+          else
+            echo "✗ Data file not found!"
+            exit 1
+          fi
+
+      - name: Deploy to Azure Static Web Apps
+        id: deploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "src"
+          api_location: ""
+          output_location: ""
+          skip_app_build: true
+
+      - name: Deployment Summary
+        if: success()
+        run: |
+          echo "🎉 Deployment successful!"
+          echo "📊 Players processed: $(jq '.players | length' src/data/halloffame.json)"
+          echo "🏆 Total wins recorded: $(jq '.allResults | length' src/data/halloffame.json)"
+
+  close_pull_request:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          action: "close"

@@ -1,0 +1,2152 @@
+{
+  "lastUpdated": "2025-12-19T20:39:52.518Z",
+  "sources": [
+    {
+      "name": "Doubletten Kampioenschappen",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubkampioenschappen/doubletten/"
+    },
+    {
+      "name": "Mix Kampioenschappen",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubkampioenschappen/mix/"
+    },
+    {
+      "name": "Tête-à-tête Kampioenschappen",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubkampioenschappen/tete-a-tete/"
+    },
+    {
+      "name": "Tripletten Kampioenschappen",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubkampioenschappen/tripletten/"
+    },
+    {
+      "name": "Doubletten Competities",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubcompetities/doubletten/"
+    },
+    {
+      "name": "Tripletten Competities",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubcompetities/tripletten/"
+    },
+    {
+      "name": "Zomercyclus",
+      "url": "https://www.zwijntje.nl/vereniging/eregalerij/clubcompetities/zomercyclus/"
+    }
+  ],
+  "players": [
+    {
+      "displayName": "Ferdinand Wiese",
+      "wins": {
+        "championship_doubletten": 6,
+        "championship_mix": 4,
+        "championship_tete-a-tete-heren": 5,
+        "championship_tripletten": 9,
+        "competition_doubletten": 1,
+        "competition_tripletten": 1,
+        "competition_zomercyclus": 3
+      },
+      "totalWins": 29
+    },
+    {
+      "displayName": "Jan van den Bosch",
+      "wins": {
+        "championship_doubletten": 6,
+        "championship_mix": 1,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 5,
+        "competition_doubletten": 3,
+        "competition_tripletten": 1,
+        "competition_zomercyclus": 2
+      },
+      "totalWins": 19
+    },
+    {
+      "displayName": "Fabian Biesheuvel",
+      "wins": {
+        "championship_doubletten": 4,
+        "championship_mix": 1,
+        "championship_tete-a-tete-heren": 2,
+        "championship_tripletten": 5,
+        "competition_doubletten": 3,
+        "competition_tripletten": 2,
+        "competition_zomercyclus": 2
+      },
+      "totalWins": 19
+    },
+    {
+      "displayName": "Frank Schepers",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_mix": 1,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 3,
+        "competition_doubletten": 2,
+        "competition_tripletten": 4
+      },
+      "totalWins": 13
+    },
+    {
+      "displayName": "Cédric Brancourt",
+      "wins": {
+        "championship_doubletten": 3,
+        "championship_tete-a-tete-heren": 3,
+        "championship_tripletten": 3,
+        "competition_doubletten": 2,
+        "competition_tripletten": 1
+      },
+      "totalWins": 12
+    },
+    {
+      "displayName": "Paul Wagenaar",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 4,
+        "competition_doubletten": 2,
+        "competition_tripletten": 1
+      },
+      "totalWins": 10
+    },
+    {
+      "displayName": "Vince Exalto",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 1,
+        "competition_zomercyclus": 4
+      },
+      "totalWins": 8
+    },
+    {
+      "displayName": "Teake van Bilzem",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_mix": 1,
+        "championship_tete-a-tete-heren": 2,
+        "championship_tripletten": 3,
+        "competition_tripletten": 1
+      },
+      "totalWins": 8
+    },
+    {
+      "displayName": "Henk Docter",
+      "wins": {
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 4,
+        "competition_doubletten": 1,
+        "competition_tripletten": 1,
+        "competition_zomercyclus": 1
+      },
+      "totalWins": 8
+    },
+    {
+      "displayName": "Anette van Velzen",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_mix": 2,
+        "championship_tete-a-tete-dames": 2,
+        "competition_tripletten": 1
+      },
+      "totalWins": 7
+    },
+    {
+      "displayName": "Patrick van der Schief",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_mix": 1,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 1,
+        "competition_zomercyclus": 3
+      },
+      "totalWins": 7
+    },
+    {
+      "displayName": "Peter Hietbrink",
+      "wins": {
+        "championship_tripletten": 4,
+        "competition_doubletten": 1,
+        "competition_tripletten": 1,
+        "competition_zomercyclus": 1
+      },
+      "totalWins": 7
+    },
+    {
+      "displayName": "Marco van Wageningen",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_tripletten": 3,
+        "competition_zomercyclus": 1
+      },
+      "totalWins": 6
+    },
+    {
+      "displayName": "Gesina Boluijt",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete-dames": 4
+      },
+      "totalWins": 5
+    },
+    {
+      "displayName": "Francisca Schipper",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete-dames": 4
+      },
+      "totalWins": 5
+    },
+    {
+      "displayName": "Henk Rol",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tripletten": 3
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Paul de Bruin",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 2
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Jesurajah Anton",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_tete-a-tete-heren": 2
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Ton Berghuis",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 1,
+        "competition_tripletten": 1
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Jeroen Brinks",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tripletten": 3
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Mourad El Ansari",
+      "wins": {
+        "championship_tete-a-tete-heren": 2,
+        "competition_tripletten": 2
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Lydia Potkamp",
+      "wins": {
+        "championship_tete-a-tete-dames": 4
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Jeanet Hartgers",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tete-a-tete-dames": 2
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Henk Stoel",
+      "wins": {
+        "championship_doubletten": 2,
+        "competition_zomercyclus": 1
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Andre Stevens",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 1
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Bert-Jan Rietveld",
+      "wins": {
+        "championship_doubletten": 1,
+        "competition_tripletten": 2
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Franz Wiese",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tripletten": 1,
+        "competition_tripletten": 1
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Leidy van Beek",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete-dames": 2
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Jan Goldebeld",
+      "wins": {
+        "championship_tripletten": 1,
+        "competition_doubletten": 2
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Ben van de Esschert",
+      "wins": {
+        "championship_tripletten": 1,
+        "competition_doubletten": 2
+      },
+      "totalWins": 3
+    },
+    {
+      "displayName": "Mario van Duren",
+      "wins": {
+        "championship_doubletten": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Gerard van Schooten",
+      "wins": {
+        "championship_doubletten": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Vikas Arumugam",
+      "wins": {
+        "championship_doubletten": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Chantal Brinks-Kamphuis",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Fenny van Vemde",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Anette Boluijt",
+      "wins": {
+        "championship_mix": 1,
+        "competition_zomercyclus": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Annet van der Schief",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Linda Simons",
+      "wins": {
+        "championship_tete-a-tete-dames": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Alirio Gumbs",
+      "wins": {
+        "championship_tete-a-tete-heren": 1,
+        "championship_tripletten": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Chantal Kamphuis",
+      "wins": {
+        "championship_tripletten": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Bert Jan Rietveld",
+      "wins": {
+        "championship_tripletten": 1,
+        "competition_doubletten": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Hans Tijssen",
+      "wins": {
+        "championship_tripletten": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Andre Hegteler",
+      "wins": {
+        "championship_tripletten": 2
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Louis Verhoeven",
+      "wins": {
+        "championship_tripletten": 1,
+        "competition_tripletten": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Heidi Schepers",
+      "wins": {
+        "championship_tripletten": 1,
+        "competition_tripletten": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Dennis Mul",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Peter Schipper",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Bauke Veltman",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jan Nikerk",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jeffrey de Deugd",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Ad Windhouwer",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jan Maarten Teunissen",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jan van Brummen",
+      "wins": {
+        "championship_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Eva Knoppersen",
+      "wins": {
+        "championship_mix": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Wim Boluijt",
+      "wins": {
+        "championship_mix": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Diana Logtenberg",
+      "wins": {
+        "championship_mix": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Anneke Biesheuvel",
+      "wins": {
+        "championship_mix": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Gerrit Wesselink",
+      "wins": {
+        "championship_mix": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Corrie van den Brink",
+      "wins": {
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Nancy van Bilzem",
+      "wins": {
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Trees van den Berghe",
+      "wins": {
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Ragu Sinniah",
+      "wins": {
+        "championship_tete-a-tete-heren": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Tiny de Boer",
+      "wins": {
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Vikas Arumugan",
+      "wins": {
+        "championship_tete-a-tete-heren": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Gerrie de Ruiter",
+      "wins": {
+        "championship_tete-a-tete-dames": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jan Heideveld",
+      "wins": {
+        "championship_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Alexander van de Poll",
+      "wins": {
+        "championship_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jeroen Bakker",
+      "wins": {
+        "championship_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Wim Regeling",
+      "wins": {
+        "championship_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Ben Krijt",
+      "wins": {
+        "championship_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jan van den Bosch sr.",
+      "wins": {
+        "competition_doubletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Jan van de Bosch",
+      "wins": {
+        "competition_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Roy Derks",
+      "wins": {
+        "competition_tripletten": 1
+      },
+      "totalWins": 1
+    },
+    {
+      "displayName": "Roy Derksen",
+      "wins": {
+        "competition_tripletten": 1
+      },
+      "totalWins": 1
+    }
+  ],
+  "allResults": [
+    {
+      "year": 2025,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cedric Brancourt",
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2024,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cedric Brancourt",
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2022,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cedric Brancourt",
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2021,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2019,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel",
+        "Teake van Bilzem"
+      ]
+    },
+    {
+      "year": 2018,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Anette van Velzen"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Frank Schepers",
+        "Anette van Velzen"
+      ]
+    },
+    {
+      "year": 2016,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jeanet Hartgers",
+        "Marco van Wageningen"
+      ]
+    },
+    {
+      "year": 2015,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Henk Rol",
+        "Mario van Duren"
+      ]
+    },
+    {
+      "year": 2013,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Frank Schepers",
+        "Dennis Mul"
+      ]
+    },
+    {
+      "year": 2012,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Patrick van der Schief"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2010,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Peter Schipper"
+      ]
+    },
+    {
+      "year": 2009,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Henk Stoel",
+        "Gerard van Schooten"
+      ]
+    },
+    {
+      "year": 2007,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Bauke Veltman",
+        "Jan Nikerk"
+      ]
+    },
+    {
+      "year": 2006,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gerard van Schooten",
+        "Henk Stoel"
+      ]
+    },
+    {
+      "year": 2005,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Marco van Wageningen",
+        "Paul de Bruin"
+      ]
+    },
+    {
+      "year": 2004,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Jeffrey de Deugd"
+      ]
+    },
+    {
+      "year": 2003,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jesurajah Anton",
+        "Ad Windhouwer"
+      ]
+    },
+    {
+      "year": 2002,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Andre Stevens",
+        "Paul Wagenaar"
+      ]
+    },
+    {
+      "year": 2001,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Vikas Arumugam"
+      ]
+    },
+    {
+      "year": 2000,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ton Berghuis",
+        "Jesurajah Anton"
+      ]
+    },
+    {
+      "year": 1999,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Bert-Jan Rietveld",
+        "Vikas Arumugam"
+      ]
+    },
+    {
+      "year": 1998,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Franz Wiese",
+        "Jan Maarten Teunissen"
+      ]
+    },
+    {
+      "year": 1997,
+      "category": "doubletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Mario van Duren",
+        "Jan van Brummen"
+      ]
+    },
+    {
+      "year": 2025,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Eva Knoppersen",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2024,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Chantal Brinks-Kamphuis",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Fenny van Vemde",
+        "Jeroen Brinks"
+      ]
+    },
+    {
+      "year": 2022,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gesina Boluijt",
+        "Wim Boluijt"
+      ]
+    },
+    {
+      "year": 2021,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Anette Boluijt",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2019,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Anette van Velzen",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2018,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Anette van Velzen",
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Diana Logtenberg",
+        "Teake van Bilzem"
+      ]
+    },
+    {
+      "year": 2016,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Francisca Schipper",
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2015,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Annet van der Schief",
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Anneke Biesheuvel",
+        "Gerrit Wesselink"
+      ]
+    },
+    {
+      "year": 2013,
+      "category": "mix",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Leidy van Beek",
+        "Patrick van der Schief"
+      ]
+    },
+    {
+      "year": 2025,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2025,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gesina Boluijt"
+      ]
+    },
+    {
+      "year": 2024,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2024,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Chantal Brinks-Kamphuis"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gesina Boluijt"
+      ]
+    },
+    {
+      "year": 2022,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2022,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gesina Boluijt"
+      ]
+    },
+    {
+      "year": 2021,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2021,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Corrie van den Brink"
+      ]
+    },
+    {
+      "year": 2019,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Teake van Bilzem"
+      ]
+    },
+    {
+      "year": 2019,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gesina Boluijt"
+      ]
+    },
+    {
+      "year": 2018,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2018,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Anette van Velzen"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Teake van Bilzem"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Anette van Velzen"
+      ]
+    },
+    {
+      "year": 2016,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Patrick van der Schief"
+      ]
+    },
+    {
+      "year": 2016,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Nancy van Bilzem"
+      ]
+    },
+    {
+      "year": 2015,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2015,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Annet van der Schief"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Mourad El Ansari"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Linda Simons"
+      ]
+    },
+    {
+      "year": 2013,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Mourad El Ansari"
+      ]
+    },
+    {
+      "year": 2013,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Linda Simons"
+      ]
+    },
+    {
+      "year": 2012,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Henk Docter"
+      ]
+    },
+    {
+      "year": 2012,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Trees van den Berghe"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Francisca Schipper"
+      ]
+    },
+    {
+      "year": 2010,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Alirio Gumbs"
+      ]
+    },
+    {
+      "year": 2010,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Francisca Schipper"
+      ]
+    },
+    {
+      "year": 2009,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt"
+      ]
+    },
+    {
+      "year": 2009,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Francisca Schipper"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Francisca Schipper"
+      ]
+    },
+    {
+      "year": 2007,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2007,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Leidy van Beek"
+      ]
+    },
+    {
+      "year": 2006,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2006,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Lydia Potkamp"
+      ]
+    },
+    {
+      "year": 2005,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul de Bruin"
+      ]
+    },
+    {
+      "year": 2005,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Lydia Potkamp"
+      ]
+    },
+    {
+      "year": 2004,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jesurajah Anton"
+      ]
+    },
+    {
+      "year": 2004,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jeanet Hartgers"
+      ]
+    },
+    {
+      "year": 2003,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ragu Sinniah"
+      ]
+    },
+    {
+      "year": 2003,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jeanet Hartgers"
+      ]
+    },
+    {
+      "year": 2002,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Andre Stevens"
+      ]
+    },
+    {
+      "year": 2002,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Leidy van Beek"
+      ]
+    },
+    {
+      "year": 2001,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar"
+      ]
+    },
+    {
+      "year": 2001,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Fenny van Vemde"
+      ]
+    },
+    {
+      "year": 2000,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt"
+      ]
+    },
+    {
+      "year": 2000,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Tiny de Boer"
+      ]
+    },
+    {
+      "year": 1999,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ton Berghuis"
+      ]
+    },
+    {
+      "year": 1999,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Lydia Potkamp"
+      ]
+    },
+    {
+      "year": 1998,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jesurajah Anton"
+      ]
+    },
+    {
+      "year": 1998,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Lydia Potkamp"
+      ]
+    },
+    {
+      "year": 1997,
+      "category": "tete-a-tete-heren",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Vikas Arumugan"
+      ]
+    },
+    {
+      "year": 1997,
+      "category": "tete-a-tete-dames",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Gerrie de Ruiter"
+      ]
+    },
+    {
+      "year": 2025,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Vince Exalto",
+        "Jan van den Bosch",
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2024,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt",
+        "Ferdinand Wiese",
+        "Jeroen Brinks"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt",
+        "Ferdinand Wiese",
+        "Henk Docter"
+      ]
+    },
+    {
+      "year": 2022,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Chantal Kamphuis",
+        "Fabian Biesheuvel",
+        "Jeroen Brinks"
+      ]
+    },
+    {
+      "year": 2021,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Chantal Kamphuis",
+        "Fabian Biesheuvel",
+        "Jeroen Brinks"
+      ]
+    },
+    {
+      "year": 2019,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Henk Docter",
+        "Marco van Wageningen"
+      ]
+    },
+    {
+      "year": 2018,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Peter Hietbrink",
+        "Teake van Bilzem",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Peter Hietbrink",
+        "Teake van Bilzem",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2016,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Patrick van der Schief",
+        "Jan van den Bosch",
+        "Peter Hietbrink"
+      ]
+    },
+    {
+      "year": 2015,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel",
+        "Jan van den Bosch",
+        "Peter Hietbrink"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Henk Docter",
+        "Marco van Wageningen"
+      ]
+    },
+    {
+      "year": 2013,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul de Bruin",
+        "Ferdinand Wiese",
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2012,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul de Bruin",
+        "Ferdinand Wiese",
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Teake van Bilzem",
+        "Bert Jan Rietveld",
+        "Cédric Brancourt"
+      ]
+    },
+    {
+      "year": 2010,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Fabian Biesheuvel",
+        "Hans Tijssen"
+      ]
+    },
+    {
+      "year": 2009,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Alirio Gumbs",
+        "Andre Hegteler",
+        "Franz Wiese"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Henk Docter",
+        "Marco van Wageningen",
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2007,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan Heideveld",
+        "Alexander van de Poll",
+        "Jeroen Bakker",
+        "Hans Tijssen"
+      ]
+    },
+    {
+      "year": 2006,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Henk Rol",
+        "Ferdinand Wiese",
+        "Paul Wagenaar"
+      ]
+    },
+    {
+      "year": 2005,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Ferdinand Wiese",
+        "Henk Rol"
+      ]
+    },
+    {
+      "year": 2004,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Henk Rol",
+        "Ferdinand Wiese",
+        "Louis Verhoeven"
+      ]
+    },
+    {
+      "year": 2003,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Andre Hegteler",
+        "Andre Stevens",
+        "Wim Regeling"
+      ]
+    },
+    {
+      "year": 2002,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Jan Goldebeld",
+        "Ben van de Esschert",
+        "Ben Krijt"
+      ]
+    },
+    {
+      "year": 2001,
+      "category": "tripletten",
+      "type": "championship",
+      "poule": "A",
+      "winners": [
+        "Ton Berghuis",
+        "Heidi Schepers",
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt",
+        "Fabian Biesheuvel",
+        "Bert Jan Rietveld"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Frank Schepers",
+        "Henk Docter"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese",
+        "Cédric Brancourt"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Fabian Biesheuvel",
+        "Jan van den Bosch sr."
+      ]
+    },
+    {
+      "year": 2005,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2002,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch",
+        "Peter Hietbrink"
+      ]
+    },
+    {
+      "year": 1999,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan Goldebeld",
+        "Ben van de Esschert"
+      ]
+    },
+    {
+      "year": 1996,
+      "category": "doubletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan Goldebeld",
+        "Ben van de Esschert"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Cédric Brancourt",
+        "Bert-Jan Rietveld",
+        "Fabian Biesheuvel",
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Peter Hietbrink",
+        "Teake van Bilzem",
+        "Anette van Velzen",
+        "Frank Schepers"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel",
+        "Jan van de Bosch",
+        "Mourad el Ansari",
+        "Roy Derks"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Frank Schepers",
+        "Louis Verhoeven",
+        "Mourad el Ansari",
+        "Roy Derksen"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Paul Wagenaar",
+        "Frank Schepers",
+        "Henk Docter"
+      ]
+    },
+    {
+      "year": 2005,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Franz Wiese",
+        "Bert-Jan Rietveld",
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2002,
+      "category": "tripletten",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Frank Schepers",
+        "Heidi Schepers",
+        "Ton Berghuis"
+      ]
+    },
+    {
+      "year": 2025,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2024,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2023,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2022,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Marco van Wageningen"
+      ]
+    },
+    {
+      "year": 2021,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Vince Exalto"
+      ]
+    },
+    {
+      "year": 2020,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Anette Boluijt"
+      ]
+    },
+    {
+      "year": 2019,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2018,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2017,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Peter Hietbrink"
+      ]
+    },
+    {
+      "year": 2016,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Patrick van der Schief"
+      ]
+    },
+    {
+      "year": 2015,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2014,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Patrick van der Schief"
+      ]
+    },
+    {
+      "year": 2013,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Fabian Biesheuvel"
+      ]
+    },
+    {
+      "year": 2012,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Patrick van der Schief"
+      ]
+    },
+    {
+      "year": 2011,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Henk Stoel"
+      ]
+    },
+    {
+      "year": 2010,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Henk Docter"
+      ]
+    },
+    {
+      "year": 2009,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    },
+    {
+      "year": 2008,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Jan van den Bosch"
+      ]
+    },
+    {
+      "year": 2007,
+      "category": "zomercyclus",
+      "type": "competition",
+      "poule": "A",
+      "winners": [
+        "Ferdinand Wiese"
+      ]
+    }
+  ]
+}

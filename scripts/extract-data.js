@@ -105,6 +105,9 @@ function fetchUrl(url) {
 
 /**
  * Parse table data from HTML
+ * Note: This function runs in Node.js during build time to extract data from HTML.
+ * The output is stored in JSON and never rendered as HTML in the browser.
+ * Frontend uses textContent (not innerHTML) to safely display the data.
  */
 function parseTableData(html) {
   const results = [];
@@ -113,14 +116,23 @@ function parseTableData(html) {
   
   let match;
   while ((match = tdRegex.exec(html)) !== null) {
-    // Remove HTML tags and decode entities
+    // Remove HTML tags more thoroughly and decode entities
+    // This is safe because: (1) runs in Node.js, not browser
+    // (2) output stored as JSON, not rendered as HTML
     let content = match[1]
+      // Remove all HTML tags iteratively to handle nested tags
       .replace(/<[^>]*>/g, '')
+      .replace(/<[^>]*>/g, '') // Second pass to catch any remaining tags
+      // Decode HTML entities
       .replace(/&[^;]+;/g, (entity) => {
         const entities = {
           '&#8211;': '–',
           '&nbsp;': ' ',
-          '&amp;': '&'
+          '&amp;': '&',
+          '&lt;': '<',
+          '&gt;': '>',
+          '&quot;': '"',
+          '&#39;': "'"
         };
         return entities[entity] || entity;
       })

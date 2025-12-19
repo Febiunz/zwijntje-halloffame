@@ -56,6 +56,19 @@ const DATA_SOURCES = [
 ];
 
 /**
+ * Name mapping for handling same people with different names
+ * Maps variations to the canonical name to use
+ */
+const NAME_MAPPINGS = {
+  'anette van velzen': 'Anette Boluijt',
+  'vikas arumugan': 'Vikas Arumugam',
+  'roy derksen': 'Roy Derks',
+  'jan van de bosch': 'Jan van den Bosch',
+  'chantal kamphuis': 'Chantal Brinks-Kamphuis',
+  'bert jan rietveld': 'Bert-Jan Rietveld'
+};
+
+/**
  * Normalize a person's name for matching
  * Handles accents, case, and common variations
  */
@@ -71,6 +84,21 @@ function normalizeName(name) {
     .replace(/ç/g, 'c')
     .replace(/ñ/g, 'n')
     .replace(/\s+/g, ' ');
+}
+
+/**
+ * Apply name mappings to ensure consistent names
+ * Returns the canonical name to use
+ */
+function applyNameMapping(name) {
+  const normalized = normalizeName(name);
+  
+  // Check if there's a mapping for this name
+  if (NAME_MAPPINGS[normalized]) {
+    return NAME_MAPPINGS[normalized];
+  }
+  
+  return name;
 }
 
 /**
@@ -212,13 +240,14 @@ function processData(cells, source) {
       }
     } else if (source.category === 'tete-a-tete') {
       // Tête-à-tête has separate columns for men and women
+      // But we'll combine them into one category
       const menWinner = cells[i + 1];
       const womenWinner = cells[i + 2];
       
       if (menWinner && menWinner !== '–') {
         results.push({
           year: parseInt(year),
-          category: source.category + '-heren',
+          category: source.category,
           type: source.type,
           poule: 'A',
           winners: [menWinner]
@@ -228,7 +257,7 @@ function processData(cells, source) {
       if (womenWinner && womenWinner !== '–') {
         results.push({
           year: parseInt(year),
-          category: source.category + '-dames',
+          category: source.category,
           type: source.type,
           poule: 'A',
           winners: [womenWinner]
@@ -275,19 +304,21 @@ function buildPlayerStats(allResults) {
   // Count wins per category per player
   allResults.forEach(result => {
     result.winners.forEach(name => {
-      const normalizedName = normalizeName(name);
+      // Apply name mapping first to get canonical name
+      const canonicalName = applyNameMapping(name);
+      const normalizedName = normalizeName(canonicalName);
       
       if (!playerMap.has(normalizedName)) {
         playerMap.set(normalizedName, {
-          displayName: name,
+          displayName: canonicalName,
           wins: {},
           totalWins: 0
         });
       } else {
         // Update display name to prefer version with more diacritics (accents)
         const player = playerMap.get(normalizedName);
-        if (countDiacritics(name) > countDiacritics(player.displayName)) {
-          player.displayName = name;
+        if (countDiacritics(canonicalName) > countDiacritics(player.displayName)) {
+          player.displayName = canonicalName;
         }
       }
       

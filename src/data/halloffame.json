@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-12-19T20:39:52.518Z",
+  "lastUpdated": "2025-12-19T21:12:21.952Z",
   "sources": [
     {
       "name": "Doubletten Kampioenschappen",
@@ -36,7 +36,7 @@
       "wins": {
         "championship_doubletten": 6,
         "championship_mix": 4,
-        "championship_tete-a-tete-heren": 5,
+        "championship_tete-a-tete": 5,
         "championship_tripletten": 9,
         "competition_doubletten": 1,
         "competition_tripletten": 1,
@@ -49,20 +49,20 @@
       "wins": {
         "championship_doubletten": 6,
         "championship_mix": 1,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 5,
         "competition_doubletten": 3,
-        "competition_tripletten": 1,
+        "competition_tripletten": 2,
         "competition_zomercyclus": 2
       },
-      "totalWins": 19
+      "totalWins": 20
     },
     {
       "displayName": "Fabian Biesheuvel",
       "wins": {
         "championship_doubletten": 4,
         "championship_mix": 1,
-        "championship_tete-a-tete-heren": 2,
+        "championship_tete-a-tete": 2,
         "championship_tripletten": 5,
         "competition_doubletten": 3,
         "competition_tripletten": 2,
@@ -75,7 +75,7 @@
       "wins": {
         "championship_doubletten": 2,
         "championship_mix": 1,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 3,
         "competition_doubletten": 2,
         "competition_tripletten": 4
@@ -86,7 +86,7 @@
       "displayName": "Cédric Brancourt",
       "wins": {
         "championship_doubletten": 3,
-        "championship_tete-a-tete-heren": 3,
+        "championship_tete-a-tete": 3,
         "championship_tripletten": 3,
         "competition_doubletten": 2,
         "competition_tripletten": 1
@@ -97,7 +97,7 @@
       "displayName": "Paul Wagenaar",
       "wins": {
         "championship_doubletten": 2,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 4,
         "competition_doubletten": 2,
         "competition_tripletten": 1
@@ -105,10 +105,21 @@
       "totalWins": 10
     },
     {
+      "displayName": "Anette Boluijt",
+      "wins": {
+        "championship_doubletten": 2,
+        "championship_mix": 3,
+        "championship_tete-a-tete": 2,
+        "competition_tripletten": 1,
+        "competition_zomercyclus": 1
+      },
+      "totalWins": 9
+    },
+    {
       "displayName": "Vince Exalto",
       "wins": {
         "championship_doubletten": 2,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 1,
         "competition_zomercyclus": 4
       },
@@ -119,7 +130,7 @@
       "wins": {
         "championship_doubletten": 1,
         "championship_mix": 1,
-        "championship_tete-a-tete-heren": 2,
+        "championship_tete-a-tete": 2,
         "championship_tripletten": 3,
         "competition_tripletten": 1
       },
@@ -128,7 +139,7 @@
     {
       "displayName": "Henk Docter",
       "wins": {
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 4,
         "competition_doubletten": 1,
         "competition_tripletten": 1,
@@ -137,21 +148,11 @@
       "totalWins": 8
     },
     {
-      "displayName": "Anette van Velzen",
-      "wins": {
-        "championship_doubletten": 2,
-        "championship_mix": 2,
-        "championship_tete-a-tete-dames": 2,
-        "competition_tripletten": 1
-      },
-      "totalWins": 7
-    },
-    {
       "displayName": "Patrick van der Schief",
       "wins": {
         "championship_doubletten": 1,
         "championship_mix": 1,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 1,
         "competition_zomercyclus": 3
       },
@@ -177,10 +178,20 @@
       "totalWins": 6
     },
     {
+      "displayName": "Bert-Jan Rietveld",
+      "wins": {
+        "championship_doubletten": 1,
+        "championship_tripletten": 1,
+        "competition_doubletten": 1,
+        "competition_tripletten": 2
+      },
+      "totalWins": 5
+    },
+    {
       "displayName": "Gesina Boluijt",
       "wins": {
         "championship_mix": 1,
-        "championship_tete-a-tete-dames": 4
+        "championship_tete-a-tete": 4
       },
       "totalWins": 5
     },
@@ -188,7 +199,7 @@
       "displayName": "Francisca Schipper",
       "wins": {
         "championship_mix": 1,
-        "championship_tete-a-tete-dames": 4
+        "championship_tete-a-tete": 4
       },
       "totalWins": 5
     },
@@ -204,7 +215,7 @@
       "displayName": "Paul de Bruin",
       "wins": {
         "championship_doubletten": 1,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 2
       },
       "totalWins": 4
@@ -213,7 +224,7 @@
       "displayName": "Jesurajah Anton",
       "wins": {
         "championship_doubletten": 2,
-        "championship_tete-a-tete-heren": 2
+        "championship_tete-a-tete": 2
       },
       "totalWins": 4
     },
@@ -221,9 +232,18 @@
       "displayName": "Ton Berghuis",
       "wins": {
         "championship_doubletten": 1,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 1,
         "competition_tripletten": 1
+      },
+      "totalWins": 4
+    },
+    {
+      "displayName": "Chantal Brinks-Kamphuis",
+      "wins": {
+        "championship_mix": 1,
+        "championship_tete-a-tete": 1,
+        "championship_tripletten": 2
       },
       "totalWins": 4
     },
@@ -238,7 +258,7 @@
     {
       "displayName": "Mourad El Ansari",
       "wins": {
-        "championship_tete-a-tete-heren": 2,
+        "championship_tete-a-tete": 2,
         "competition_tripletten": 2
       },
       "totalWins": 4
@@ -246,7 +266,7 @@
     {
       "displayName": "Lydia Potkamp",
       "wins": {
-        "championship_tete-a-tete-dames": 4
+        "championship_tete-a-tete": 4
       },
       "totalWins": 4
     },
@@ -254,7 +274,7 @@
       "displayName": "Jeanet Hartgers",
       "wins": {
         "championship_doubletten": 1,
-        "championship_tete-a-tete-dames": 2
+        "championship_tete-a-tete": 2
       },
       "totalWins": 3
     },
@@ -270,16 +290,16 @@
       "displayName": "Andre Stevens",
       "wins": {
         "championship_doubletten": 1,
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 1
       },
       "totalWins": 3
     },
     {
-      "displayName": "Bert-Jan Rietveld",
+      "displayName": "Vikas Arumugam",
       "wins": {
-        "championship_doubletten": 1,
-        "competition_tripletten": 2
+        "championship_doubletten": 2,
+        "championship_tete-a-tete": 1
       },
       "totalWins": 3
     },
@@ -296,7 +316,7 @@
       "displayName": "Leidy van Beek",
       "wins": {
         "championship_mix": 1,
-        "championship_tete-a-tete-dames": 2
+        "championship_tete-a-tete": 2
       },
       "totalWins": 3
     },
@@ -331,33 +351,10 @@
       "totalWins": 2
     },
     {
-      "displayName": "Vikas Arumugam",
-      "wins": {
-        "championship_doubletten": 2
-      },
-      "totalWins": 2
-    },
-    {
-      "displayName": "Chantal Brinks-Kamphuis",
-      "wins": {
-        "championship_mix": 1,
-        "championship_tete-a-tete-dames": 1
-      },
-      "totalWins": 2
-    },
-    {
       "displayName": "Fenny van Vemde",
       "wins": {
         "championship_mix": 1,
-        "championship_tete-a-tete-dames": 1
-      },
-      "totalWins": 2
-    },
-    {
-      "displayName": "Anette Boluijt",
-      "wins": {
-        "championship_mix": 1,
-        "competition_zomercyclus": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 2
     },
@@ -365,37 +362,22 @@
       "displayName": "Annet van der Schief",
       "wins": {
         "championship_mix": 1,
-        "championship_tete-a-tete-dames": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 2
     },
     {
       "displayName": "Linda Simons",
       "wins": {
-        "championship_tete-a-tete-dames": 2
+        "championship_tete-a-tete": 2
       },
       "totalWins": 2
     },
     {
       "displayName": "Alirio Gumbs",
       "wins": {
-        "championship_tete-a-tete-heren": 1,
+        "championship_tete-a-tete": 1,
         "championship_tripletten": 1
-      },
-      "totalWins": 2
-    },
-    {
-      "displayName": "Chantal Kamphuis",
-      "wins": {
-        "championship_tripletten": 2
-      },
-      "totalWins": 2
-    },
-    {
-      "displayName": "Bert Jan Rietveld",
-      "wins": {
-        "championship_tripletten": 1,
-        "competition_doubletten": 1
       },
       "totalWins": 2
     },
@@ -426,6 +408,13 @@
       "wins": {
         "championship_tripletten": 1,
         "competition_tripletten": 1
+      },
+      "totalWins": 2
+    },
+    {
+      "displayName": "Roy Derks",
+      "wins": {
+        "competition_tripletten": 2
       },
       "totalWins": 2
     },
@@ -523,49 +512,42 @@
     {
       "displayName": "Corrie van den Brink",
       "wins": {
-        "championship_tete-a-tete-dames": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 1
     },
     {
       "displayName": "Nancy van Bilzem",
       "wins": {
-        "championship_tete-a-tete-dames": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 1
     },
     {
       "displayName": "Trees van den Berghe",
       "wins": {
-        "championship_tete-a-tete-dames": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 1
     },
     {
       "displayName": "Ragu Sinniah",
       "wins": {
-        "championship_tete-a-tete-heren": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 1
     },
     {
       "displayName": "Tiny de Boer",
       "wins": {
-        "championship_tete-a-tete-dames": 1
-      },
-      "totalWins": 1
-    },
-    {
-      "displayName": "Vikas Arumugan",
-      "wins": {
-        "championship_tete-a-tete-heren": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 1
     },
     {
       "displayName": "Gerrie de Ruiter",
       "wins": {
-        "championship_tete-a-tete-dames": 1
+        "championship_tete-a-tete": 1
       },
       "totalWins": 1
     },
@@ -608,27 +590,6 @@
       "displayName": "Jan van den Bosch sr.",
       "wins": {
         "competition_doubletten": 1
-      },
-      "totalWins": 1
-    },
-    {
-      "displayName": "Jan van de Bosch",
-      "wins": {
-        "competition_tripletten": 1
-      },
-      "totalWins": 1
-    },
-    {
-      "displayName": "Roy Derks",
-      "wins": {
-        "competition_tripletten": 1
-      },
-      "totalWins": 1
-    },
-    {
-      "displayName": "Roy Derksen",
-      "wins": {
-        "competition_tripletten": 1
       },
       "totalWins": 1
     }
@@ -1036,7 +997,7 @@
     },
     {
       "year": 2025,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1045,7 +1006,7 @@
     },
     {
       "year": 2025,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1054,7 +1015,7 @@
     },
     {
       "year": 2024,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1063,7 +1024,7 @@
     },
     {
       "year": 2024,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1072,7 +1033,7 @@
     },
     {
       "year": 2023,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1081,7 +1042,7 @@
     },
     {
       "year": 2023,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1090,7 +1051,7 @@
     },
     {
       "year": 2022,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1099,7 +1060,7 @@
     },
     {
       "year": 2022,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1108,7 +1069,7 @@
     },
     {
       "year": 2021,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1117,7 +1078,7 @@
     },
     {
       "year": 2021,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1126,7 +1087,7 @@
     },
     {
       "year": 2019,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1135,7 +1096,7 @@
     },
     {
       "year": 2019,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1144,7 +1105,7 @@
     },
     {
       "year": 2018,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1153,7 +1114,7 @@
     },
     {
       "year": 2018,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1162,7 +1123,7 @@
     },
     {
       "year": 2017,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1171,7 +1132,7 @@
     },
     {
       "year": 2017,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1180,7 +1141,7 @@
     },
     {
       "year": 2016,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1189,7 +1150,7 @@
     },
     {
       "year": 2016,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1198,7 +1159,7 @@
     },
     {
       "year": 2015,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1207,7 +1168,7 @@
     },
     {
       "year": 2015,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1216,7 +1177,7 @@
     },
     {
       "year": 2014,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1225,7 +1186,7 @@
     },
     {
       "year": 2014,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1234,7 +1195,7 @@
     },
     {
       "year": 2013,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1243,7 +1204,7 @@
     },
     {
       "year": 2013,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1252,7 +1213,7 @@
     },
     {
       "year": 2012,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1261,7 +1222,7 @@
     },
     {
       "year": 2012,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1270,7 +1231,7 @@
     },
     {
       "year": 2011,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1279,7 +1240,7 @@
     },
     {
       "year": 2011,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1288,7 +1249,7 @@
     },
     {
       "year": 2010,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1297,7 +1258,7 @@
     },
     {
       "year": 2010,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1306,7 +1267,7 @@
     },
     {
       "year": 2009,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1315,7 +1276,7 @@
     },
     {
       "year": 2009,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1324,7 +1285,7 @@
     },
     {
       "year": 2008,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1333,7 +1294,7 @@
     },
     {
       "year": 2008,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1342,7 +1303,7 @@
     },
     {
       "year": 2007,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1351,7 +1312,7 @@
     },
     {
       "year": 2007,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1360,7 +1321,7 @@
     },
     {
       "year": 2006,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1369,7 +1330,7 @@
     },
     {
       "year": 2006,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1378,7 +1339,7 @@
     },
     {
       "year": 2005,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1387,7 +1348,7 @@
     },
     {
       "year": 2005,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1396,7 +1357,7 @@
     },
     {
       "year": 2004,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1405,7 +1366,7 @@
     },
     {
       "year": 2004,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1414,7 +1375,7 @@
     },
     {
       "year": 2003,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1423,7 +1384,7 @@
     },
     {
       "year": 2003,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1432,7 +1393,7 @@
     },
     {
       "year": 2002,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1441,7 +1402,7 @@
     },
     {
       "year": 2002,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1450,7 +1411,7 @@
     },
     {
       "year": 2001,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1459,7 +1420,7 @@
     },
     {
       "year": 2001,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1468,7 +1429,7 @@
     },
     {
       "year": 2000,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1477,7 +1438,7 @@
     },
     {
       "year": 2000,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1486,7 +1447,7 @@
     },
     {
       "year": 1999,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1495,7 +1456,7 @@
     },
     {
       "year": 1999,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1504,7 +1465,7 @@
     },
     {
       "year": 1998,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1513,7 +1474,7 @@
     },
     {
       "year": 1998,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1522,7 +1483,7 @@
     },
     {
       "year": 1997,
-      "category": "tete-a-tete-heren",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [
@@ -1531,7 +1492,7 @@
     },
     {
       "year": 1997,
-      "category": "tete-a-tete-dames",
+      "category": "tete-a-tete",
       "type": "championship",
       "poule": "A",
       "winners": [

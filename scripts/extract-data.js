@@ -207,6 +207,7 @@ function parseTableData(html) {
 
 /**
  * Process championship/competition data
+ * Handles variable row sizes in HTML tables (some have 3 columns, some have 4)
  */
 function processData(cells, source) {
   const results = [];
@@ -285,7 +286,7 @@ function processData(cells, source) {
       
       // Get Poule A data
       const pouleA = cells[i];
-      if (pouleA && pouleA !== '–' && pouleA.trim() !== '') {
+      if (pouleA && pouleA.trim() !== '' && pouleA !== '–') {
         const names = extractNames(pouleA);
         if (names.length > 0) {
           results.push({

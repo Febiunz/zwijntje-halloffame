@@ -216,14 +216,18 @@ function processData(cells, source) {
   if (source.category === 'zomercyclus') {
     // Zomercyclus: Jaar, Naam
     // Skip header (first 2 cells)
-    for (let i = 2; i < cells.length; i += 2) {
+    for (let i = 2; i + 1 < cells.length; i += 2) {
       const year = cells[i];
       if (!year || !/^\d{4}$/.test(year)) continue;
+      
+      const parsedYear = parseInt(year);
+      // Validate year is in reasonable range
+      if (parsedYear < 1990 || parsedYear > 2100) continue;
       
       const winner = cells[i + 1];
       if (winner && winner !== '–') {
         results.push({
-          year: parseInt(year),
+          year: parsedYear,
           category: source.category,
           type: source.type,
           poule: 'A',
@@ -234,16 +238,20 @@ function processData(cells, source) {
   } else if (source.category === 'tete-a-tete') {
     // Tête-à-tête: Jaar, Heren, Dames
     // Skip header (first 3 cells)
-    for (let i = 3; i < cells.length; i += 3) {
+    for (let i = 3; i + 2 < cells.length; i += 3) {
       const year = cells[i];
       if (!year || !/^\d{4}$/.test(year)) continue;
+      
+      const parsedYear = parseInt(year);
+      // Validate year is in reasonable range
+      if (parsedYear < 1990 || parsedYear > 2100) continue;
       
       const menWinner = cells[i + 1];
       const womenWinner = cells[i + 2];
       
       if (menWinner && menWinner !== '–') {
         results.push({
-          year: parseInt(year),
+          year: parsedYear,
           category: source.category,
           type: source.type,
           poule: 'A',
@@ -253,7 +261,7 @@ function processData(cells, source) {
       
       if (womenWinner && womenWinner !== '–') {
         results.push({
-          year: parseInt(year),
+          year: parsedYear,
           category: source.category,
           type: source.type,
           poule: 'A',
@@ -282,7 +290,18 @@ function processData(cells, source) {
       }
       
       const parsedYear = parseInt(year);
+      // Validate year is in reasonable range
+      if (parsedYear < 1990 || parsedYear > 2100) {
+        i++;
+        continue;
+      }
+      
       i++; // Move to Poule A
+      
+      // If there is no cell after the year, there is no Poule A data to process
+      if (i >= cells.length) {
+        break;
+      }
       
       // Get Poule A data
       const pouleA = cells[i];

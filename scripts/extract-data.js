@@ -211,23 +211,14 @@ function parseTableData(html) {
 function processData(cells, source) {
   const results = [];
   
-  // Skip header row (first 3 or 2 cells)
-  let headerSize = 3;
+  // Determine expected columns based on source
   if (source.category === 'zomercyclus') {
-    headerSize = 2;
-  } else if (source.category === 'tete-a-tete') {
-    headerSize = 3; // Jaar, Heren, Dames
-  }
-  
-  // Process data in rows
-  for (let i = headerSize; i < cells.length; i += headerSize) {
-    const year = cells[i];
-    
-    // Skip if not a valid year
-    if (!year || !/^\d{4}$/.test(year)) continue;
-    
-    if (source.category === 'zomercyclus') {
-      // Zomercyclus has only year and name
+    // Zomercyclus: Jaar, Naam
+    // Skip header (first 2 cells)
+    for (let i = 2; i < cells.length; i += 2) {
+      const year = cells[i];
+      if (!year || !/^\d{4}$/.test(year)) continue;
+      
       const winner = cells[i + 1];
       if (winner && winner !== '–') {
         results.push({
@@ -238,9 +229,14 @@ function processData(cells, source) {
           winners: [winner]
         });
       }
-    } else if (source.category === 'tete-a-tete') {
-      // Tête-à-tête has separate columns for men and women
-      // But we'll combine them into one category
+    }
+  } else if (source.category === 'tete-a-tete') {
+    // Tête-à-tête: Jaar, Heren, Dames
+    // Skip header (first 3 cells)
+    for (let i = 3; i < cells.length; i += 3) {
+      const year = cells[i];
+      if (!year || !/^\d{4}$/.test(year)) continue;
+      
       const menWinner = cells[i + 1];
       const womenWinner = cells[i + 2];
       
@@ -263,15 +259,37 @@ function processData(cells, source) {
           winners: [womenWinner]
         });
       }
-    } else {
-      // Regular format: Year, Poule A, Poule B (or C)
-      const pouleA = cells[i + 1];
+    }
+  } else {
+    // Other categories: Process row by row, detecting year cells
+    // Table structure varies: some rows have 3 cells (Year, A, B), some have 4 (Year, A, B, C)
+    let i = 0;
+    
+    // Skip until we find first year (after header)
+    while (i < cells.length && !/^\d{4}$/.test(cells[i])) {
+      i++;
+    }
+    
+    // Process remaining cells
+    while (i < cells.length) {
+      const year = cells[i];
       
-      if (pouleA && pouleA !== '–') {
+      // Check if this is a valid year
+      if (!/^\d{4}$/.test(year)) {
+        i++;
+        continue;
+      }
+      
+      const parsedYear = parseInt(year);
+      i++; // Move to Poule A
+      
+      // Get Poule A data
+      const pouleA = cells[i];
+      if (pouleA && pouleA !== '–' && pouleA.trim() !== '') {
         const names = extractNames(pouleA);
         if (names.length > 0) {
           results.push({
-            year: parseInt(year),
+            year: parsedYear,
             category: source.category,
             type: source.type,
             poule: 'A',
@@ -279,8 +297,12 @@ function processData(cells, source) {
           });
         }
       }
+      i++; // Move past Poule A
       
-      // We don't count Poule B as wins per requirements
+      // Skip Poule B and optionally Poule C until we find the next year or end
+      while (i < cells.length && !/^\d{4}$/.test(cells[i])) {
+        i++;
+      }
     }
   }
   

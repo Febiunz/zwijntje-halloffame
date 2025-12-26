@@ -21,7 +21,7 @@ jobs:
     name: Build and Deploy
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: true
           lfs: false
